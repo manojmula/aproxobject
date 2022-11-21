@@ -1,8 +1,8 @@
 /***
- * @sentObject is an object that contains keys and values.
+ * @param {Object} sentObject is an object that contains keys and values.
  * If the object is empty , it will return null rather than throwing error
  * 
- * @key is the key of the object that you want to get the value of
+ * @param {String} key is the key of the object that you want to get the value of
  * it might be part of key or complete key
  *
  */
@@ -70,4 +70,4 @@ const convertArrayToObject = (array, keysList, valueField) =>
 
 
 
-module.export = {getCloselyRelatedKey, convertArrayToObject}
+module.exports = {getCloselyRelatedKey, convertArrayToObject}

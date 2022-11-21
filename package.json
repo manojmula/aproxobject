@@ -1,10 +1,10 @@
 {
   "name": "aproxobject",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Object based algorithms and methods.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "node": ">=10.0.0"
   },
   "devDependencies": {
+    "chai": "^4.3.7",
     "mocha": "^10.1.0"
   }
 }
