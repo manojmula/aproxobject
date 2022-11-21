@@ -1,0 +1,11 @@
+{
+  "name": "aproxobject",
+  "version": "1.0.0",
+  "description": "This is to search similar object keys in JS objects",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manoj Mulakala",
+  "license": "ISC"
+}
