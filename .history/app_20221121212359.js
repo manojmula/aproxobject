@@ -30,11 +30,10 @@ const getCloselyRelatedKey = (sentObject, key) => {
  * 
  * @param {Object} array 
  * @param {String} keysList 
- * @param {String} valueField
  * @returns {null | Object}
  */
 
-const convertArrayToObject = (array, keysList, valueField) => 
+const convertArrayToObject = (array, keysList) => 
 {
     if(!Array.isArray(array) || array.length === 0)
     {
@@ -63,11 +62,10 @@ const convertArrayToObject = (array, keysList, valueField) =>
     
     for(let i = 0; i < array.length; i++)
     {
-        object[listOfKeys[i]] = array[i][valueField]
+        object[listOfKeys[i]] = array[i]
     }
     return object
 }
-
 
 
 module.export = {getCloselyRelatedKey, convertArrayToObject}

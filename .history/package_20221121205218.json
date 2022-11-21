@@ -1,7 +1,7 @@
 {
   "name": "aproxobject",
   "version": "0.0.3",
-  "description": "Object based algorithms and methods.",
+  "description": "This is to search similar object keys in JS objects",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,15 +11,7 @@
     "url": "https://github.com/manojmula/aproxobject"
   },
   "author": "Manoj Mulakala",
-  "license": "MIT",
-  "keywords": [
-    "object", 
-    "array", 
-    "convert"
-  ],
+  "license": "ISC",
   "dependencies": {    
-  },
-  "engines": {
-    "node" : ">=10.0.0"
   }
 }

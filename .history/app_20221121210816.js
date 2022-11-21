@@ -29,45 +29,28 @@ const getCloselyRelatedKey = (sentObject, key) => {
 /**
  * 
  * @param {Object} array 
- * @param {String} keysList 
- * @param {String} valueField
- * @returns {null | Object}
+ * @param {String} keys 
+ * @returns {null | Array}
  */
 
-const convertArrayToObject = (array, keysList, valueField) => 
+const convertArrayToObject = (array, keys) => 
 {
     if(!Array.isArray(array) || array.length === 0)
     {
         throw new Error("Array is empty. Cannot convert to object")
     }
-    
-    else if(!Array.isArray(keysList) || keysList.length === 0)
+    else if(!Array.isArray(keys) || keys.length === 0)
     {
         throw new Error('keys cannot be empty. Please provide keys')
     }
     const object = {}
-
-    const listOfKeys = []
-
-    for(let i = 0 ; i < array.length; i++)
-    {
-        for(const j = 0 ; j < keysList.length; k++)
-        {
-            if(!listOfKeys[i])
-            {
-                listOfKeys[i] = ""
-            }
-            listOfKeys[i] += array[i][keysList[j]]
-        }
-    }
     
     for(let i = 0; i < array.length; i++)
     {
-        object[listOfKeys[i]] = array[i][valueField]
+        object[fields] = array[i]
     }
     return object
 }
-
 
 
 module.export = {getCloselyRelatedKey, convertArrayToObject}

@@ -11,15 +11,12 @@
     "url": "https://github.com/manojmula/aproxobject"
   },
   "author": "Manoj Mulakala",
-  "license": "MIT",
+  "license": "ISC",
   "keywords": [
     "object", 
     "array", 
     "convert"
   ],
   "dependencies": {    
-  },
-  "engines": {
-    "node" : ">=10.0.0"
   }
 }

@@ -63,11 +63,10 @@ const convertArrayToObject = (array, keysList, valueField) =>
     
     for(let i = 0; i < array.length; i++)
     {
-        object[listOfKeys[i]] = array[i][valueField]
+        object[listOfKeys[i]] = array[i].valueField
     }
     return object
 }
-
 
 
 module.export = {getCloselyRelatedKey, convertArrayToObject}
