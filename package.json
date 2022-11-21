@@ -1,10 +1,14 @@
 {
   "name": "aproxobject",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "This is to search similar object keys in JS objects",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manojmula/aproxobject"
   },
   "author": "Manoj Mulakala",
   "license": "ISC",
