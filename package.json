@@ -1,6 +1,6 @@
 {
   "name": "aproxobject",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This is to search similar object keys in JS objects",
   "main": "app.js",
   "scripts": {
