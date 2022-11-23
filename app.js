@@ -27,14 +27,16 @@ const getCloselyRelatedKey = (sentObject, key) => {
 }
 
 /**
- * 
+ * This is group by for an array of Objects using a key or combination 
+ * of keys and valueField is the field that matters , it will be selected
+ * in array of objects
  * @param {Object} array 
  * @param {String} keysList 
  * @param {String} valueField
  * @returns {null | Object}
  */
 
-const convertArrayToObject = (array, keysList, valueField) => 
+const groupArrayOfObjects = ({array, keysList, valueField}) => 
 {
     if(!Array.isArray(array) || array.length === 0)
     {
@@ -66,6 +68,10 @@ const convertArrayToObject = (array, keysList, valueField) =>
         object[listOfKeys[i]] = array[i][valueField]
     }
     return object
+}
+
+const groupByObjectsAndAdd = () => {
+
 }
 
 
