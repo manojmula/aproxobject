@@ -70,8 +70,42 @@ const groupArrayOfObjects = ({array, keysList, valueField}) =>
     return object
 }
 
-const groupByObjectsAndAdd = () => {
+const groupByObjectsAndAdd = (objectOne, key, returnType) => {
+        if(Object.keys(objectOne).length === 0)
+        {
+            throw new Error('object passed is empty.')
+        }
+        else if(key === null || key === undefined || objectOne[key] == null)
+        {
+            throw new Error('Key mentioned is either null or does not exist in passed object.')
+        }
 
+        let newObject = {}
+        let defaultValue
+        if(returnType == "number")
+        {
+            defaultValue = 0
+        }
+        else if(returnType == "string")
+        {
+            defaultValue = ""
+        }
+        else
+        {
+            throw new Error('Please provide valid default value')
+        }
+
+        for(let i = 0 ;  i < Object.keys(objectOne).length; i++)
+        {
+            if(newObject[key] == null || newObject[key] == undefined)
+            {
+                newObject[key] = defaultValue
+            }
+            newObject[key] += objectOne[i][key] == null ? objectOne[i][key] : defaultValue
+        }
+
+        return newObject        
+   
 }
 
 
